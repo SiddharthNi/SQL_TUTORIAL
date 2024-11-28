@@ -122,3 +122,28 @@ column_name2 datatype constraint,
 ### Select & View ALL columns
 
 SELECT * FROM table_name;
+
+### Inserting VALUES
+
+INSERT INTO table_name
+
+(colname1, colname2);
+
+VALUES
+
+(col1_v1, col2_v1),
+
+(col1_v2, col2_v2);
+
+## Keys
+### Primary Key
+
+It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id)
+
+There is only 1 PK & it should be NOT null.
+
+### foreign key
+
+A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
+
+FKs can have duplicate & null values.

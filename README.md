@@ -283,8 +283,59 @@ SET col1 = val1, col2 = val2
 
 WHERE condition;
 
-### foreign key
+### Delete (to delete existing rows)
 
-A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
+DELETE FROM table_name
 
-FKs can have duplicate & null values.
+WHERE condition;
+
+## Cascading for FK
+On Delete Cascade
+
+When we create a foreign key using this option, it deletes the referencing rows in the child table
+when the referenced row is deleted in the parent table which has a primary key.
+
+On Update Cascade
+
+When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child
+table when the referenced row is updated in the parent table which has a primary key.
+
+## Alter (to change the schema)
+
+### ADD COLUMN
+
+ALTER TABLE table_name
+
+ADD COLUMN column_name datatype constraint;
+
+### RENAME TABLE
+
+ALTER TABLE table_name
+
+RENAME TO new_table_name;
+
+### DROP COLUMN
+
+ALTER TABLE table_name
+
+DROP COLUMN column_name;
+
+### CHANGE COLUMN
+
+ALTER TABLE table_name
+
+CHANGE COLUMN old_name new_name new_datatype new_constraint;
+
+### MODIFY Column (modify datatype/ constraint)
+
+ALTER TABLE table_name
+
+MODIFY col_name new_datatype new_constraint;
+
+### Truncate (to delete table's data)
+
+TRUNCATE TABLE table_name ;
+
+### Joins in SQL
+
+Join is used to combine rows from two or more tables, based on a related column between them.

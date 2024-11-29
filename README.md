@@ -147,3 +147,144 @@ There is only 1 PK & it should be NOT null.
 A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
 
 FKs can have duplicate & null values.
+
+## constraint
+Constraint is the specify the rules for data in table.
+
+NOT NULL:
+
+columns cannot have a null value
+
+UNIQUE:
+
+all values in column are different
+
+PRIMARY KEY:
+
+makes a column unique & not null but used only for one
+
+FOREIGN KEY :
+
+prevent actions that would destroy links between tables
+
+DEFAULT:
+
+ sets the default value of a column
+
+CHECK:
+
+it can limit the values allowed in a column
+
+## Select in Detail
+
+used to select any data from the database
+
+Basic Syntax
+
+SELECT col1, col2 FROM table_name;
+
+To Select ALL
+
+SELECT * FROM table_name;
+
+## Where Clause
+
+To define some conditions
+
+SELECT col1, col2 FROM table_name
+
+WHERE conditions;
+
+### Using Operators in WHERE
+
+Arithmetic Operators : +(addition) , -(subtraction), *(multiplication), /(division), %(modulus)
+
+Comparison Operators : = (equal to), != (not equal to), > , >=, <, <=
+
+Logical Operators : AND, OR , NOT, IN, BETWEEN, ALL, LIKE, ANY
+
+Bitwise Operators : & (Bitwise AND), | (Bitwise OR)
+
+## Limit Clause
+
+Sets an upper limit on number of (tuples)rows to be returned
+
+SELECT col1, col2 FROM table_name
+
+LIMIT number;
+
+## Order By Clause
+
+To sort in ascending (ASC) or descending order (DESC)
+
+
+SELECT col1, col2 FROM table_name
+
+ORDER BY col_name(s) ASC;
+
+## Aggregate Functions
+
+Aggregare functions perform a calculation on a set of values, and return a single value.
+
+COUNT( )
+
+MAX( )
+
+MIN( )
+
+SUM( )
+
+AVG( )
+
+## Group By Clause
+
+Groups rows that have the same values into summary rows.
+
+It collects data from multiple records and groups the result by one or more 
+column.
+
+Generally we use group by with some aggregation function.
+
+## Having Clause
+
+Similar to Where i.e. applies some condition on rows.
+
+Used when we want to apply any condition after grouping.
+
+## General Order
+
+SELECT column(s)
+
+FROM table_name
+
+WHERE condition
+
+GROUP BY column(s)
+
+HAVING condition
+
+ORDER BY column(s) ASC;
+
+## Having Clause
+
+Similar to Where i.e. applies some condition on rows.
+
+Used when we want to apply any condition after grouping.
+
+## Table related Queries
+
+Update (to update existing rows)
+
+
+
+UPDATE table_name
+
+SET col1 = val1, col2 = val2
+
+WHERE condition;
+
+### foreign key
+
+A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
+
+FKs can have duplicate & null values.

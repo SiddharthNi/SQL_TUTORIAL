@@ -394,7 +394,7 @@ UNION
 
 RIGHT JOIN
 
-SQL syntax 
+### SQL syntax 
 
 SELECT column(s)
 

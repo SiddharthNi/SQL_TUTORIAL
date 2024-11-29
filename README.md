@@ -339,3 +339,78 @@ TRUNCATE TABLE table_name ;
 ### Joins in SQL
 
 Join is used to combine rows from two or more tables, based on a related column between them.
+
+### Inner Join
+
+Returns records that have matching values in both tables
+
+Syntax
+
+SELECT column(s)
+
+FROM tableA
+
+INNER JOIN tableB
+
+ON tableA.col_name = tableB.col_name;
+
+### Left Join
+
+Returns all records from the left table, and the matched records from
+the right table
+
+Syntax
+
+SELECT column(s)
+
+FROM tableA
+
+LEFT JOIN tableB
+
+ON tableA.col_name = tableB.col_name;
+
+### Right Join
+
+Returns all records from the right table, and the matched records
+from the left table
+
+Syntax
+
+SELECT column(s)
+
+FROM tableA
+
+RIGHT JOIN tableB
+
+ON tableA.col_name = tableB.col_name;
+
+### Full Join
+
+Returns all records when there is a match in either left or right table
+
+LEFT JOIN
+
+UNION
+
+RIGHT JOIN
+
+SQL syntax 
+
+SELECT column(s)
+
+FROM tableA
+
+LEFT JOIN tableB
+
+ON tableA.column_name=tableB.column_name
+
+UNION
+
+SELECT column(s)
+
+FROM tableA
+
+RIGHT JOIN tableB
+
+ON tableA.column_name=tableB.column_name
+

@@ -414,3 +414,40 @@ RIGHT JOIN tableB
 
 ON tableA.column_name=tableB.column_name
 
+### Self Join
+
+It is a regular join but the table is joined with itself.
+
+### Syntax
+
+SELECT column(s)
+
+FROM table as a
+
+JOIN table as b
+
+O﻿N a.col_name = b.col_name;
+
+### Union
+
+It is used to combine the result-set of two or more SELECT statements.
+
+Gives UNIQUE records.
+
+Syntax:
+
+SELECT column(s) FROM tableA
+
+UNION
+
+SELECT column(s) FROM tableB
+
+### MySQL Views
+
+A view is a virtual table based on the result-set of an SQL statement.
+
+*A view always shows up-to-date data. The
+database engine recreates the view, every time a
+user queries it.
+
+
